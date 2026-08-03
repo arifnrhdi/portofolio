@@ -50,7 +50,7 @@ const Jumbotrons = () => {
             </div>
           </motion.div>
 
-          {/* ================= RIGHT ================= */}
+          {/* ================= KANAN ================= */}
           <motion.div
             initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
