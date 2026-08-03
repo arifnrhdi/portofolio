@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 pb-10 lg:px-10">
         {/* CTA */}
         <Reveal>
-          <div className="rounded-[36px] border-[3px] border-black bg-[#7D9DFF] p-10 shadow-[10px_10px_0px_#000] md:p-16">
+          <div className="rounded-[36px] border-[3px] border-black bg-[#7D9DFF] p-10 shadow-[8px_8px_0px_#000] md:p-16">
             <div className="flex flex-col items-center text-center">
               <p className="text-sm font-bold tracking-[0.35em] uppercase">
                 Let&apos;s Work Together

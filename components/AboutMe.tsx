@@ -17,9 +17,9 @@ const AboutMe = () => {
     <div className="space-y-20">
       {/* About Card */}
       <Reveal>
-        <div className="grid items-center gap-12 rounded-[32px] border-[3px] border-black bg-white p-8 shadow-[10px_10px_0px_#000]">
+        <div className="grid items-center gap-12 rounded-4xl border-[3px] border-black bg-white p-8 shadow-[10px_10px_0px_#000]">
           <div className="order-2 space-y-5 text-lg leading-8 text-zinc-700">
-            <p>
+            <p className="text-sm lg:text-lg">
               A Computer Science student with interest in full-stack web
               development and data analysis. Proficient in frontend
               technologies such as React.js, Next.js, and Tailwind CSS, as
@@ -50,16 +50,16 @@ const AboutMe = () => {
 
         <Reveal delay={0.1}>
           <div className="rounded-[30px] border-[3px] border-black bg-white p-8 shadow-[10px_10px_0px_#000]">
-            <div className="flex flex-col gap-8 lg:flex-row">
+            <div className="flex flex-col gap-4 lg:gap-8 lg:flex-row">
               {/* Logo */}
-              <div className="flex items-start justify-center">
+              <div className="flex items-start">
                 <div className="rounded-2xl border-[3px] border-black bg-white p-4 shadow-[5px_5px_0px_#000]">
                   <Image
                     src="/images/logo-lepkom.png"
                     alt="LEPKOM"
                     width={112}
                     height={112}
-                    className="w-28"
+                    className="w-18 lg:w-28"
                   />
                 </div>
               </div>
@@ -68,10 +68,10 @@ const AboutMe = () => {
               <div className="flex-1">
                 <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
                   <div>
-                    <h3 className="text-3xl font-black">
+                    <h3 className="text-2xl lg:text-3xl font-black">
                       Laboratory Assistant
                     </h3>
-                    <p className="text-lg font-semibold text-zinc-600">
+                    <p className="lg:text-lg font-semibold text-zinc-600">
                       Lembaga Pengembangan Komputerisasi (Gunadarma
                       University)
                     </p>
@@ -82,7 +82,7 @@ const AboutMe = () => {
                   </div>
                 </div>
 
-                <ul className="mt-4 list-disc pl-4 text-[17px] leading-6 text-zinc-700">
+                <ul className="mt-4 list-disc pl-4 text-sm lg:text-[17px] lg:leading-6 text-zinc-700">
                   <li>
                     Delivered course materials on Database Management Systems
                     (MySQL & SQL Server) and Web Development using Golang.

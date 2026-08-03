@@ -36,7 +36,7 @@ export default function Home() {
 
               <Link
                 href="/project"
-                className="inline-flex items-center gap-2 rounded-full border-[3px] border-black bg-[#7D9DFF] px-4 py-1 font-bold shadow-[5px_5px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:px-6 md:py-3"
+                className="inline-flex items-center gap-2 rounded-full border-[3px] border-black bg-[#7D9DFF] px-4 py-1 font-bold shadow-[4px_4px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none md:px-6 md:py-3"
               >
                 View All
                 <FontAwesomeIcon icon={faArrowRight} />

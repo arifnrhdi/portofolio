@@ -38,7 +38,7 @@ const Jumbotrons = () => {
                 href="https://drive.google.com/file/d/1m5y7izVhn1nTblwqBDnRAHn3jCJaKTUX/view?usp=sharing"
                 className="rounded-xl border-[3px] border-black bg-yellow-400 px-8 py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
               >
-                Resume <FontAwesomeIcon className="ml-1 text-sm" icon={faArrowUpRightFromSquare} />
+                Resume <FontAwesomeIcon className="ml-1 text-xs lg:text-sm" icon={faArrowUpRightFromSquare} />
               </a>
 
               <a
@@ -58,7 +58,7 @@ const Jumbotrons = () => {
             className="relative order-1 flex justify-center lg:order-2"
           >
             {/* Card Foto */}
-            <div className="relative rounded-[40px] border-4 border-black bg-pink-400 p-4 shadow-[10px_10px_0px_#000]">
+            <div className="relative rounded-[40px] border-4 border-black bg-pink-400 p-4 shadow-[8px_8px_0px_#000]">
               <div className="relative h-55 w-45 overflow-hidden rounded-[28px] md:h-85 md:w-75">
                 <Image
                   src="/images/wadidaw.jpg"
@@ -87,7 +87,7 @@ const Jumbotrons = () => {
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-8 left-4 rounded-2xl border-[3px] border-black bg-cyan-400 p-3 lg:p-5 shadow-[5px_5px_0px_#000]"
+              className="absolute top-8 left-4 rounded-2xl border-[3px] border-black bg-cyan-400 p-3 lg:p-5 shadow-[3px_3px_0px_#000]"
             >
               <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faReact} />
             </motion.div>
@@ -95,15 +95,15 @@ const Jumbotrons = () => {
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-16 right-0 rounded-full border-[3px] border-black bg-yellow-300 p-3 lg:p-5 shadow-[5px_5px_0px_#000]"
+              className="absolute top-16 right-0 rounded-full border-[3px] border-black bg-yellow-300 p-3 px-4 lg:p-5 shadow-[3px_3px_0px_#000]"
             >
-              <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faDatabase} />
+              <FontAwesomeIcon className="text-xl lg:text-3xl rotate-345" icon={faDatabase} />
             </motion.div>
 
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-8 rotate-12 rounded-2xl border-[3px] border-black bg-blue-300 p-3 lg:p-5 shadow-[5px_5px_0px_#000]"
+              className="absolute -top-8 rotate-12 rounded-2xl border-[3px] border-black bg-blue-300 p-3 lg:p-5 shadow-[3px_3px_0px_#000]"
             >
               <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faPython} />
             </motion.div>
