@@ -28,7 +28,7 @@ const NavbarMobile = () => {
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
       className="fixed right-0 bottom-5 left-0 z-50 flex justify-center lg:hidden"
     >
-      <div className="flex items-center gap-14 rounded-full border-[3px] border-black bg-[#FFF9F1]/60 px-7 py-3 shadow-[6px_6px_0px_#000] backdrop-blur-sm">
+      <div className="flex items-center gap-10 rounded-full border-[3px] border-black bg-[#FFF9F1]/60 px-7 py-3 shadow-[3px_3px_0px_#000] backdrop-blur-sm">
         {items.map((item) => {
           const active = pathname === item.href;
           return (
@@ -39,7 +39,7 @@ const NavbarMobile = () => {
                 active ? "text-[#FF6B6B]" : "text-zinc-800"
               }`}
             >
-              <FontAwesomeIcon icon={item.icon} className="text-xl" />
+              <FontAwesomeIcon icon={item.icon} className="text-sm" />
               <span className="mt-1 text-xs font-semibold">{item.label}</span>
             </Link>
           );

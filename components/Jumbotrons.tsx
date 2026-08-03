@@ -59,7 +59,7 @@ const Jumbotrons = () => {
           >
             {/* Card Foto */}
             <div className="relative rounded-[40px] border-4 border-black bg-pink-400 p-4 shadow-[10px_10px_0px_#000]">
-              <div className="relative h-75 w-65 overflow-hidden rounded-[28px] md:h-85 md:w-75">
+              <div className="relative h-55 w-45 overflow-hidden rounded-[28px] md:h-85 md:w-75">
                 <Image
                   src="/images/wadidaw.jpg"
                   alt="Arif Nurhadi"
@@ -74,11 +74,11 @@ const Jumbotrons = () => {
               <motion.div
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-8 left-20 rounded-full border-[3px] border-black bg-green-400 px-5 py-2 text-sm font-bold shadow-[4px_4px_0px_#000]"
+                className="absolute -bottom-8 -left-2 lg:left-20 rounded-full border-[3px] border-black bg-green-400 px-5 py-2 text-sm font-bold shadow-[4px_4px_0px_#000]"
               >
                 <div className="flex items-center gap-1">
                   <FontAwesomeIcon className="text-xs text-[#1a1a1a]" icon={faRocket} />{" "}
-                  <span>Available for Internship & Fulltime</span>
+                  <span className="text-[11px] lg:text-sm">Available for Internship & Fulltime</span>
                 </div>
               </motion.div>
             </div>
@@ -87,25 +87,25 @@ const Jumbotrons = () => {
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-8 left-4 rounded-2xl border-[3px] border-black bg-cyan-400 p-5 shadow-[5px_5px_0px_#000]"
+              className="absolute top-8 left-4 rounded-2xl border-[3px] border-black bg-cyan-400 p-3 lg:p-5 shadow-[5px_5px_0px_#000]"
             >
-              <FontAwesomeIcon className="text-3xl" icon={faReact} />
+              <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faReact} />
             </motion.div>
 
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-16 right-0 rounded-full border-[3px] border-black bg-yellow-300 p-5 shadow-[5px_5px_0px_#000]"
+              className="absolute top-16 right-0 rounded-full border-[3px] border-black bg-yellow-300 p-3 lg:p-5 shadow-[5px_5px_0px_#000]"
             >
-              <FontAwesomeIcon className="text-3xl" icon={faDatabase} />
+              <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faDatabase} />
             </motion.div>
 
             <motion.div
               animate={{ y: [0, -6, 0] }}
               transition={{ duration: 3.8, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-8 rotate-12 rounded-2xl border-[3px] border-black bg-blue-300 p-5 shadow-[5px_5px_0px_#000]"
+              className="absolute -top-8 rotate-12 rounded-2xl border-[3px] border-black bg-blue-300 p-3 lg:p-5 shadow-[5px_5px_0px_#000]"
             >
-              <FontAwesomeIcon className="text-3xl" icon={faPython} />
+              <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faPython} />
             </motion.div>
           </motion.div>
         </div>
