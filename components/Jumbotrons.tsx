@@ -61,7 +61,7 @@ const Jumbotrons = () => {
             <div className="relative rounded-[40px] border-4 border-black bg-pink-400 p-4 shadow-[8px_8px_0px_#000]">
               <div className="relative h-55 w-45 overflow-hidden rounded-[28px] md:h-85 md:w-75">
                 <Image
-                  src="/images/me.jpg"
+                  src="/images/meee.jpg"
                   alt="Arif Nurhadi"
                   fill
                   priority
