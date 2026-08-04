@@ -35,7 +35,7 @@ const Jumbotrons = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://drive.google.com/drive/folders/1TYCnCDMJOlTxHkxuJX6jAVWUbRheonTa"
+                href="https://drive.google.com/file/d/1u8r-payyD2OLXB3M6zeG6NmX6tbyVCQp/view?usp=sharing"
                 className="rounded-xl border-[3px] border-black bg-yellow-400 px-4 lg:px-8 py-2 lg:py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
               >
                 Resume <FontAwesomeIcon className="ml-1 text-xs lg:text-sm" icon={faArrowUpRightFromSquare} />
