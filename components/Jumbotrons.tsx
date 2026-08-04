@@ -36,14 +36,14 @@ const Jumbotrons = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://drive.google.com/file/d/1m5y7izVhn1nTblwqBDnRAHn3jCJaKTUX/view?usp=sharing"
-                className="rounded-xl border-[3px] border-black bg-yellow-400 px-8 py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
+                className="rounded-xl border-[3px] border-black bg-yellow-400 px-4 lg:px-8 py-2 lg:py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
               >
                 Resume <FontAwesomeIcon className="ml-1 text-xs lg:text-sm" icon={faArrowUpRightFromSquare} />
               </a>
 
               <a
                 href="/about"
-                className="rounded-xl border-[3px] border-black bg-white px-8 py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
+                className="rounded-xl border-[3px] border-black bg-white px-4 lg:px-8 py-2 lg:py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
               >
                 About Me
               </a>
