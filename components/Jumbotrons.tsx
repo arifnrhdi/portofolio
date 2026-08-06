@@ -87,7 +87,7 @@ const Jumbotrons = () => {
             <motion.div
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-8 left-4 rounded-2xl border-[3px] border-black bg-cyan-400 p-3 lg:p-5 shadow-[3px_3px_0px_#000]"
+              className="absolute top-8 left-14 rounded-2xl border-[3px] rotate-10 border-black bg-cyan-400 p-3 lg:p-5 shadow-[3px_3px_0px_#000]"
             >
               <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faReact} />
             </motion.div>
@@ -95,7 +95,7 @@ const Jumbotrons = () => {
             <motion.div
               animate={{ y: [0, 8, 0] }}
               transition={{ duration: 4.2, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-16 right-0 rounded-full border-[3px] border-black bg-yellow-300 p-3 px-4 lg:p-5 shadow-[3px_3px_0px_#000]"
+              className="absolute top-16 right-10 rounded-full border-[3px] border-black bg-yellow-300 p-3 px-4 lg:py-5 lg:px-6 shadow-[3px_3px_0px_#000]"
             >
               <FontAwesomeIcon className="text-xl lg:text-3xl rotate-345" icon={faDatabase} />
             </motion.div>

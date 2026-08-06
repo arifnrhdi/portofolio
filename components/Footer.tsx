@@ -6,22 +6,18 @@ import Reveal from "@/components/animations/Reveal";
 const Footer = () => {
   return (
     <footer className="mt-32 bg-[#FDF6EC]">
-      <div className="mx-auto max-w-7xl px-6 pb-10 lg:px-10">
+      <div className="mx-auto max-w-7xl px-6 pb-6 lg:px-10">
         {/* CTA */}
         <Reveal>
           <div className="rounded-[36px] border-[3px] border-black bg-[#7D9DFF] p-10 shadow-[8px_8px_0px_#000] md:p-16">
             <div className="flex flex-col items-center text-center">
-              <p className="text-sm font-bold tracking-[0.35em] uppercase">
-                Let&apos;s Work Together
-              </p>
+              <p className="text-sm font-bold tracking-[0.35em] uppercase">Let&apos;s Work Together</p>
 
-              <h2 className="mt-4 text-4xl font-black md:text-6xl">
-                Have a project in mind?
-              </h2>
+              <h2 className="mt-4 text-4xl font-black md:text-6xl">Have a project in mind?</h2>
 
               <p className="mt-5 max-w-2xl text-lg leading-8">
-                I&apos;m always excited to collaborate on meaningful projects, AI
-                applications, and modern web experiences.
+                I&apos;m always excited to collaborate on meaningful projects, AI applications, and modern web
+                experiences.
               </p>
             </div>
           </div>
@@ -38,40 +34,36 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex gap-6 text-3xl">
-            <a
-              href="https://github.com/arifnrhdi"
-              target="_blank"
-              rel="noreferrer"
-              className="transition hover:-translate-y-1"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
+          <div className="flex flex-col lg:items-end">
+            <div className="flex gap-6 text-3xl justify-center">
+              <a
+                href="https://github.com/arifnrhdi"
+                target="_blank"
+                rel="noreferrer"
+                className="transition hover:-translate-y-1"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
 
-            <a
-              href="https://www.linkedin.com/in/arif-nurhadii/"
-              target="_blank"
-              rel="noreferrer"
-              className="transition hover:-translate-y-1"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
+              <a
+                href="https://www.linkedin.com/in/arfnrhdi/"
+                target="_blank"
+                rel="noreferrer"
+                className="transition hover:-translate-y-1"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
 
-            <a
-              href="https://www.instagram.com/hikorii__/"
-              target="_blank"
-              rel="noreferrer"
-              className="transition hover:-translate-y-1"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-
-            <a
-              href="mailto:arfnrhdi17@gmail.com"
-              className="transition hover:-translate-y-1"
-            >
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
+              <a
+                href="https://www.instagram.com/hikorii__/"
+                target="_blank"
+                rel="noreferrer"
+                className="transition hover:-translate-y-1"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </div>
+            <p className="mt-2 text-zinc-600">arfnrhdi17@gmail.com</p>
           </div>
         </div>
 

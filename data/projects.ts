@@ -2,36 +2,6 @@ import type { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
-    title: "Sakana To-Do List",
-    category: "Web Development",
-    image: "/images/sakana.jpg",
-    alt: "Sakana To-Do List",
-    description:
-      "A modern task management web application built with React and Express.js featuring authentication and CRUD functionality.",
-    tech: ["React", "Express", "MySQL"],
-    href: "https://github.com/arifnrhdi/sakana-todo-list",
-  },
-  {
-    title: "AdoptPets",
-    category: "Full Stack Development",
-    image: "/images/adoptpets.jpg",
-    alt: "AdoptPets",
-    description:
-      "A pet adoption platform that allows users to browse, add, edit, and manage pet adoption data with a responsive interface.",
-    tech: ["React", "Express", "MySQL"],
-    href: "https://github.com/arifnrhdi/adoptpets",
-  },
-  {
-    title: "Letterboxd UI Redesign",
-    category: "UI / UX Design",
-    image: "/images/figma.jpg",
-    alt: "Letterboxd",
-    description:
-      "A redesigned user interface for Letterboxd created in Figma with a cleaner layout and improved user experience.",
-    tech: ["Figma", "UI Design", "Prototype"],
-    href: "https://www.figma.com/design/VF8nZ6Vmf84I3LLZRR2DC9/Letterboxd",
-  },
-  {
     title: "Bank Sampah Kelurahan Cikoko",
     category: "Mobile Full Stack",
     image: "/images/sampah.png",
@@ -70,5 +40,35 @@ export const projects: Project[] = [
       "A machine learning application that recommends suitable crops based on climate conditions and soil characteristics using the Random Forest algorithm.",
     tech: ["Python", "Random Forest", "Scikit-learn"],
     href: "https://github.com/arifnrhdi/Climate-and-Soil-Based-Crop-Recommendation-System#",
+  },
+  {
+    title: "Sakana To-Do List",
+    category: "Web Development",
+    image: "/images/sakana.jpg",
+    alt: "Sakana To-Do List",
+    description:
+      "A modern task management web application built with React and Express.js featuring authentication and CRUD functionality.",
+    tech: ["React", "Express", "MySQL"],
+    href: "https://github.com/arifnrhdi/sakana-todo-list",
+  },
+  {
+    title: "AdoptPets",
+    category: "Full Stack Development",
+    image: "/images/adoptpets.jpg",
+    alt: "AdoptPets",
+    description:
+      "A pet adoption platform that allows users to browse, add, edit, and manage pet adoption data with a responsive interface.",
+    tech: ["React", "Express", "MySQL"],
+    href: "https://github.com/arifnrhdi/adoptpets",
+  },
+  {
+    title: "Letterboxd UI Redesign",
+    category: "UI / UX Design",
+    image: "/images/figma.jpg",
+    alt: "Letterboxd",
+    description:
+      "A redesigned user interface for Letterboxd created in Figma with a cleaner layout and improved user experience.",
+    tech: ["Figma", "UI Design", "Prototype"],
+    href: "https://www.figma.com/design/VF8nZ6Vmf84I3LLZRR2DC9/Letterboxd",
   },
 ];
