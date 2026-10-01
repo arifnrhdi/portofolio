@@ -58,15 +58,15 @@ const Jumbotrons = () => {
             className="relative order-1 flex justify-center lg:order-2"
           >
             {/* Card Foto */}
-            <div className="relative rounded-[40px] border-4 border-black bg-pink-400 p-4 shadow-[8px_8px_0px_#000]">
-              <div className="relative h-55 w-45 overflow-hidden rounded-[28px] md:h-85 md:w-75">
+            <div className="relative rounded-[40px] border-4 border-black bg-[#f6f6f6] p-1 shadow-[8px_8px_0px_#000]">
+              <div className="relative h-55 w-45 overflow-hidden rounded-[28px] md:h-115 md:w-85">
                 <Image
-                  src="/images/meee.jpg"
+                  src="/images/guehhh.png"
                   alt="Arif Nurhadi"
                   fill
                   priority
-                  sizes="300px"
-                  className="object-cover grayscale"
+                  sizes="400px"
+                  className="object-cover"
                 />
               </div>
 
