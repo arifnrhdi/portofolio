@@ -29,8 +29,9 @@ const Footer = () => {
             <h2 className="text-4xl font-black">Arif.</h2>
 
             <p className="mt-2 text-zinc-600">
-              Computer Science Student <br />
-              AI & Full Stack Enthusiast
+              Full Stack Developer
+              <br />
+              AI & Data Enthusiast
             </p>
           </div>
 

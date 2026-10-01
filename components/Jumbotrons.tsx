@@ -26,9 +26,9 @@ const Jumbotrons = () => {
               NURHADI.
             </h1>
 
-            <p className="mt-8 max-w-lg text-lg leading-8 text-zinc-600">
-              I&apos;m a Computer Science student at Gunadarma University who enjoys developing websites, artificial
-              intelligence, and modern digital experiences.
+            <p className="mt-8 max-w-lg text-lg lg:text-xl leading-8 text-zinc-600">
+              I&apos;m an Informatics graduate from Gunadarma University who enjoys developing websites, exploring
+              artificial intelligence, and creating modern digital experiences.
             </p>
 
             <div className="mt-8 flex gap-5">
