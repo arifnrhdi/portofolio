@@ -13,7 +13,7 @@ const container: Variants = {
 };
 
 export const staggerItem: Variants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 0 },
   show: {
     opacity: 1,
     y: 0,
@@ -37,7 +37,7 @@ const StaggerGroup = ({ children, className }: StaggerGroupProps) => {
       className={className}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.15 }}
+      viewport={{ once: true, amount: 0 }}
       variants={container}
     >
       {children}

@@ -35,11 +35,11 @@ const Navbar = () => {
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="fixed top-0 left-0 z-50 hidden w-full px-5 py-5 lg:block"
+        className="fixed top-0 left-0 z-50 hidden w-full px-5 py-2 lg:block"
       >
         <nav
           className={`mx-auto flex max-w-7xl items-center justify-between rounded-full border-[3px] border-black px-8 py-4 transition-all duration-300 ${
-            isScrolled ? "bg-[#FFF9F1]/70 shadow-[8px_8px_0px_#000] backdrop-blur-md" : "bg-[#FFF9F1]"
+            isScrolled ? "bg-[#FFF9F1]/70 shadow-[4px_6px_0px_#000] backdrop-blur-md" : "bg-[#FFF9F1]"
           }`}
         >
           {/* Logo */}
