@@ -85,7 +85,7 @@ const Jumbotrons = () => {
                 initial={{ opacity: 0, y: 52 }}
                 animate={{ opacity: 1, y: [0, -5, 0] }}
                 transition={{ opacity: { duration: 0.5, delay: 0.8 }, y: { duration: 1, delay: 0.8 } }}
-                whileHover={{ scale: 1.05, rotate: -2 }}
+                whileHover={{ scale: 1.05, rotate: -2, transition: { duration: 0.2, delay: 0 } }}
                 className="absolute bottom-0 left-26 lg:left-36 z-20 -translate-x-1/2 rounded-full border-[3px] border-black bg-green-400 px-5 py-2 text-sm font-bold shadow-[4px_4px_0px_#000]"
               >
                 <div className="flex items-center gap-1">
@@ -105,10 +105,10 @@ const Jumbotrons = () => {
                 y: { duration: 2.8, delay: 1, repeat: Infinity, ease: "easeInOut" },
                 rotate: { duration: 3.6, delay: 1, repeat: Infinity, ease: "easeInOut" },
               }}
-              whileHover={{ scale: 1.14, rotate: -8 }}
-              className="absolute top-8 left-4 rounded-2xl border-[3px] rotate-10 border-black bg-cyan-400 p-3 shadow-[3px_3px_0px_#000] lg:top-16 lg:left-14 lg:p-5"
+              whileHover={{ scale: 1.14, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
+              className="absolute top-8 left-4 rounded-2xl border-[3px] rotate-10 border-black bg-cyan-400 p-3 shadow-[3px_3px_0px_#000] lg:top-26 lg:left-14 lg:p-5"
             >
-              <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faReact} />
+              <FontAwesomeIcon className="text-xl lg:text-4xl" icon={faReact} />
             </motion.div>
 
             <motion.div
@@ -120,10 +120,10 @@ const Jumbotrons = () => {
                 y: { duration: 3.2, delay: 1.1, repeat: Infinity, ease: "easeInOut" },
                 rotate: { duration: 4, delay: 1.1, repeat: Infinity, ease: "easeInOut" },
               }}
-              whileHover={{ scale: 1.14, rotate: 12 }}
-              className="absolute top-12 right-4 rounded-full border-[3px] border-black bg-yellow-300 p-3 px-4 shadow-[3px_3px_0px_#000] lg:top-24 lg:right-14 lg:px-6 lg:py-5"
+              whileHover={{ scale: 1.14, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
+              className="absolute top-12 right-4 rounded-full border-[3px] border-black bg-yellow-300 p-3 px-4 shadow-[3px_3px_0px_#000] lg:top-34 lg:right-14 lg:px-6 lg:py-5"
             >
-              <FontAwesomeIcon className="text-xl lg:text-3xl rotate-345" icon={faDatabase} />
+              <FontAwesomeIcon className="text-xl lg:text-4xl rotate-345" icon={faDatabase} />
             </motion.div>
 
             <motion.div
@@ -135,32 +135,34 @@ const Jumbotrons = () => {
                 x: { duration: 2.6, delay: 1.02, repeat: Infinity, ease: "easeInOut" },
                 rotate: { duration: 3.4, delay: 1.02, repeat: Infinity, ease: "easeInOut" },
               }}
-              whileHover={{ scale: 1.14, rotate: -8 }}
+              whileHover={{ scale: 1.14, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
               className="absolute -top-6 rotate-12 rounded-2xl border-[3px] border-black bg-blue-300 p-3 shadow-[3px_3px_0px_#000] lg:-top-8 lg:p-5"
             >
-              <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faPython} />
+              <FontAwesomeIcon className="text-xl lg:text-4xl" icon={faPython} />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, scale: 0.5, rotate: -25 }}
               animate={{ opacity: 1, scale: 1, rotate: -12 }}
               transition={{ duration: 0.55, delay: 0, ease: "backOut" }}
-              whileHover={{ scale: 1.15, rotate: 0 }}
-              className="absolute bottom-16 right-3 rounded-xl border-[3px] border-black bg-pink-300 p-3 shadow-[3px_3px_0px_#000] lg:bottom-24 lg:right-2 lg:p-4"
+              whileHover={{ scale: 1.15, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
+              className="absolute bottom-16 right-3 rounded-xl border-[3px] border-black bg-pink-300 p-3 shadow-[3px_3px_0px_#000] lg:bottom-24 lg:right-1 lg:p-4"
               aria-label="Code"
             >
-              <FontAwesomeIcon className="text-xl lg:text-2xl" icon={faCode} />
+              <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faCode} />
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, scale: 0.5, rotate: -80 }}
-              animate={{ opacity: 1, scale: 1, rotate: 14 }}
-              transition={{ duration: 0.7, delay: 0, ease: "backOut" }}
-              whileHover={{ scale: 1.18, rotate: 36 }}
+              animate={{ opacity: 1, scale: 1.2, rotate: 16 }}
+              transition={{ duration: 0.7, delay: 0.8, ease: "backOut" }}
+              whileHover={{ scale: 1.4, rotate: 36, transition: { delay: 0, duration: 0.3 } }}
               className="absolute bottom-14 left-2 rounded-full border-[3px] border-black bg-orange-300 px-3 py-2 shadow-[3px_3px_0px_#000] lg:bottom-20 lg:left-16"
               aria-label="Pointer"
             >
-              <FontAwesomeIcon className="text-lg lg:text-2xl pl-1 -scale-x-100" icon={faArrowPointer} />
+              <a href="/about">
+                <FontAwesomeIcon className="text-lg lg:text-2xl pl-1 -scale-x-100" icon={faArrowPointer} />
+              </a>
             </motion.div>
           </motion.div>
         </div>
