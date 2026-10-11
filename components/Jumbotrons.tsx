@@ -63,7 +63,7 @@ const Jumbotrons = () => {
             className="relative order-1 flex justify-center lg:order-2"
           >
             {/* Foto pop-up */}
-            <div className="relative isolate h-[340px] w-full max-w-[340px] md:h-[520px] md:max-w-[440px]">
+            <div className="relative isolate h-[340px] w-full max-w-[340px] md:h-[500px] md:max-w-[420px]">
               <motion.div
                 initial={{ opacity: 0, scale: 0.72, y: 30 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -76,7 +76,7 @@ const Jumbotrons = () => {
                   fill
                   priority
                   sizes="(max-width: 768px) 360px, 500px"
-                  className="object-contain object-bottom"
+                  className="lg:object-cover object-contain object-bottom"
                 />
               </motion.div>
 
@@ -106,7 +106,7 @@ const Jumbotrons = () => {
                 rotate: { duration: 3.6, delay: 1, repeat: Infinity, ease: "easeInOut" },
               }}
               whileHover={{ scale: 1.14, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
-              className="absolute top-8 left-4 rounded-2xl border-[3px] rotate-10 border-black bg-cyan-400 p-3 shadow-[3px_3px_0px_#000] lg:top-26 lg:left-14 lg:p-5"
+              className="absolute top-0 left-10 rounded-2xl border-[3px] rotate-14 border-black bg-cyan-400 p-3 shadow-[3px_3px_0px_#000] lg:-top-8 lg:left-24 lg:p-5"
             >
               <FontAwesomeIcon className="text-xl lg:text-4xl" icon={faReact} />
             </motion.div>
@@ -136,7 +136,7 @@ const Jumbotrons = () => {
                 rotate: { duration: 3.4, delay: 1.02, repeat: Infinity, ease: "easeInOut" },
               }}
               whileHover={{ scale: 1.14, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
-              className="absolute -top-6 rotate-12 rounded-2xl border-[3px] border-black bg-blue-300 p-3 shadow-[3px_3px_0px_#000] lg:-top-8 lg:p-5"
+              className="absolute top-32 left-3 -rotate-4 rounded-2xl border-[3px] border-black bg-blue-300 p-3 shadow-[3px_3px_0px_#000] lg:top-48 lg:left-20 lg:p-5"
             >
               <FontAwesomeIcon className="text-xl lg:text-4xl" icon={faPython} />
             </motion.div>
