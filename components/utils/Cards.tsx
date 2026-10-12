@@ -28,7 +28,7 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
         whileHover={{ y: -6 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         onClick={() => setOpen(true)}
-        className="cursor-pointer rounded-3xl lg:rounded-[28px] border-[3px] border-black bg-[#FFF9F1] p-3 lg:p-4 shadow-[5px_5px_0px_#000] lg:shadow-[6px_6px_0px_#000] transition-shadow duration-300 hover:shadow-[8px_8px_0px_#000] lg:hover:shadow-[10px_10px_0px_#000]"
+        className="flex h-full cursor-pointer flex-col rounded-3xl border-[3px] border-black bg-[#FFF9F1] p-3 shadow-[5px_5px_0px_#000] transition-shadow duration-300 hover:shadow-[8px_8px_0px_#000] lg:rounded-[28px] lg:p-4 lg:shadow-[6px_6px_0px_#000] lg:hover:shadow-[10px_10px_0px_#000]"
       >
         {/* Thumbnail */}
         <div className="relative h-44 lg:h-56 w-full overflow-hidden rounded-xl lg:rounded-2xl border-[3px] border-black">
@@ -41,7 +41,7 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
           />
         </div>
 
-        <div className="mt-4 lg:mt-6 flex flex-col">
+        <div className="mt-4 flex flex-1 flex-col lg:mt-6">
           {/* Category */}
           {category && (
             <span className="text-xs lg:text-sm font-semibold tracking-wider text-[#6C63FF] uppercase">{category}</span>
@@ -51,7 +51,7 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
           <h3 className="mt-2 text-xl lg:text-2xl leading-tight font-extrabold text-zinc-900">{title}</h3>
 
           {/* Description */}
-          <p className="mt-2 lg:mt-3 line-clamp-3 text-sm lg:text-base leading-6 lg:leading-7 text-zinc-600">
+          <p className="mt-2 mb-3 lg:mt-3 line-clamp-3 text-sm lg:text-base leading-6 lg:leading-7 text-zinc-600">
             {description}
           </p>
 
@@ -74,7 +74,7 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="mt-5 lg:mt-6 inline-flex w-fit items-center gap-1 rounded-full border-[3px] border-black bg-[#7D9DFF] px-4 lg:px-6 py-1 lg:py-1.5 text-xs lg:text-sm font-bold shadow-[3px_3px_0px_#000] lg:shadow-[4px_4px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+            className="mt-auto inline-flex w-fit items-center gap-1 rounded-full border-[3px] border-black bg-[#7D9DFF] px-4 py-1 text-xs font-bold shadow-[3px_3px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:px-6 lg:py-1.5 lg:text-sm lg:shadow-[4px_4px_0px_#000]"
           >
             View
             <FontAwesomeIcon className="text-[9px] lg:text-sm" icon={faArrowUpRightFromSquare} />

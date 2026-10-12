@@ -22,7 +22,6 @@ ter-upload. Taruh file-file berikut ke folder `public/images/` dengan nama persi
 | --- | --- |
 | `wadidaw.jpg` | Foto hero (Jumbotrons) |
 | `logo-lepkom.png` | Logo pengalaman kerja (AboutMe) |
-| `gunadarma.jpeg` | Halaman About Gunadarma & kartu artikel |
 | `sakana.jpg` | Project: Sakana To-Do List |
 | `adoptpets.jpg` | Project: AdoptPets |
 | `figma.jpg` | Project: Letterboxd UI Redesign |
@@ -36,7 +35,7 @@ Semua gambar sudah dipakai lewat `next/image` (otomatis lazy-load & optimasi uku
 | --- | --- |
 | `/` | `app/page.tsx` |
 | `/about` | `app/about/page.tsx` |
-| `/about-gunadarma` | `app/about-gunadarma/page.tsx` |
+| `/articles/pengenalan-web` | `app/articles/pengenalan-web/page.tsx` |
 | `/project` | `app/project/page.tsx` |
 | `/articles` | `app/articles/page.tsx` |
 
