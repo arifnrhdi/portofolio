@@ -70,8 +70,8 @@ export default function IntroductionWebArticle() {
             <ul className="mt-4 list-disc space-y-3 pl-6 text-base leading-7 text-zinc-700 md:text-lg">
               <li><code className="font-bold">&lt;h1&gt;</code> sampai <code className="font-bold">&lt;h6&gt;</code> untuk judul bertingkat.</li>
               <li><code className="font-bold">&lt;p&gt;</code> untuk paragraf.</li>
-              <li><code className="font-bold">&lt;a href="..."&gt;</code> untuk tautan ke halaman lain.</li>
-              <li><code className="font-bold">&lt;img src="..." alt="..."&gt;</code> untuk gambar; teks <code className="font-bold">alt</code> membantu menjelaskan gambar.</li>
+              <li><code className="font-bold">&lt;a href=&quot;...&quot;&gt;</code> untuk tautan ke halaman lain.</li>
+              <li><code className="font-bold">&lt;img src=&quot;...&quot; alt=&quot;...&quot;&gt;</code> untuk gambar; teks <code className="font-bold">alt</code> membantu menjelaskan gambar.</li>
               <li><code className="font-bold">&lt;ul&gt;</code> atau <code className="font-bold">&lt;ol&gt;</code> bersama <code className="font-bold">&lt;li&gt;</code> untuk daftar.</li>
             </ul>
           </section>
