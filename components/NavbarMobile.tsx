@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -22,9 +22,15 @@ const items = [
 const NavbarMobile = () => {
   const pathname = usePathname();
   const [isVisible, setIsVisible] = useState(false);
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
-    const updateVisibility = () => setIsVisible(window.scrollY > 20);
+    const updateVisibility = () => {
+      const nextVisibility = window.scrollY > 20;
+      setIsVisible((currentVisibility) =>
+        currentVisibility === nextVisibility ? currentVisibility : nextVisibility,
+      );
+    };
 
     updateVisibility();
     window.addEventListener("scroll", updateVisibility, { passive: true });
@@ -36,12 +42,12 @@ const NavbarMobile = () => {
     <motion.div
       initial={false}
       animate={{ y: isVisible ? 0 : 100 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: reduceMotion ? 0 : 0.2, ease: [0.22, 1, 0.36, 1] }}
       aria-hidden={!isVisible}
       style={{ pointerEvents: isVisible ? "auto" : "none" }}
       className="fixed right-0 bottom-5 left-0 z-50 flex justify-center lg:hidden"
     >
-      <nav className="flex items-center gap-10 rounded-full border-[3px] border-black bg-[#FFF9F1]/60 px-7 py-3 shadow-[3px_3px_0px_#000] backdrop-blur-sm">
+      <nav className="flex items-center gap-10 rounded-full border-[3px] border-black bg-[#FFF9F1] px-7 py-3 shadow-[3px_3px_0px_#000]">
         {items.map((item) => {
           const active = pathname === item.href;
           return (
