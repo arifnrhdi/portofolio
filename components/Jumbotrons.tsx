@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faPython } from "@fortawesome/free-brands-svg-icons";
@@ -9,10 +8,6 @@ import { faArrowPointer, faArrowUpRightFromSquare, faCode, faDatabase } from "@f
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
 const Jumbotrons = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "auto" });
-  }, []);
-
   return (
     <section>
       <div className="mx-auto max-w-7xl lg:py-4">

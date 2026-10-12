@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,22 +21,35 @@ const items = [
 
 const NavbarMobile = () => {
   const pathname = usePathname();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const updateVisibility = () => setIsVisible(window.scrollY > 20);
+
+    updateVisibility();
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+
+    return () => window.removeEventListener("scroll", updateVisibility);
+  }, [pathname]);
 
   return (
     <motion.div
-      initial={{ y: 60, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+      initial={false}
+      animate={{ y: isVisible ? 0 : 100 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      aria-hidden={!isVisible}
+      style={{ pointerEvents: isVisible ? "auto" : "none" }}
       className="fixed right-0 bottom-5 left-0 z-50 flex justify-center lg:hidden"
     >
-      <div className="flex items-center gap-10 rounded-full border-[3px] border-black bg-[#FFF9F1]/60 px-7 py-3 shadow-[3px_3px_0px_#000] backdrop-blur-sm">
+      <nav className="flex items-center gap-10 rounded-full border-[3px] border-black bg-[#FFF9F1]/60 px-7 py-3 shadow-[3px_3px_0px_#000] backdrop-blur-sm">
         {items.map((item) => {
           const active = pathname === item.href;
           return (
             <Link
               key={item.href}
               href={item.href}
-              className={`flex flex-col items-center transition hover:scale-110 ${
+              tabIndex={isVisible ? 0 : -1}
+              className={`flex flex-col items-center ${
                 active ? "text-[#FF6B6B]" : "text-zinc-800"
               }`}
             >
@@ -44,7 +58,7 @@ const NavbarMobile = () => {
             </Link>
           );
         })}
-      </div>
+      </nav>
     </motion.div>
   );
 };

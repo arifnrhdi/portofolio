@@ -57,7 +57,7 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
 
           {/* Tech Stack */}
           {tech.length > 0 && (
-            <div className="mt-4 lg:mt-5 flex flex-wrap gap-2">
+            <div className="mt-1 lg:mt-2 flex flex-wrap gap-2 mb-3">
               {tech.map((item) => (
                 <span
                   key={item}
