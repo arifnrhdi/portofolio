@@ -51,13 +51,23 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    const scrollToTop = () => window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
 
+    scrollToTop();
+    window.addEventListener("pageshow", scrollToTop);
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => {
+      window.removeEventListener("pageshow", scrollToTop);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [pathname]);
 
   return (
     <>
