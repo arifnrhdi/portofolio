@@ -41,14 +41,14 @@ const Jumbotrons = () => {
                 target="_blank"
                 rel="noreferrer"
                 href="https://drive.google.com/file/d/1u8r-payyD2OLXB3M6zeG6NmX6tbyVCQp/view?usp=sharing"
-                className="rounded-xl border-[3px] border-black bg-yellow-400 px-4 lg:px-8 py-2 lg:py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
+                className="rounded-xl border-[3px] border-black bg-yellow-400 px-4 lg:px-8 py-3 lg:py-4 text-xs font-bold shadow-[4px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
               >
                 Resume <FontAwesomeIcon className="ml-1 text-xs lg:text-sm" icon={faArrowUpRightFromSquare} />
               </a>
 
               <a
                 href="/about"
-                className="rounded-xl border-[3px] border-black bg-white px-4 lg:px-8 py-2 lg:py-4 text-xs font-bold shadow-[6px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
+                className="rounded-xl border-[3px] border-black bg-white px-4 lg:px-8 py-3 lg:py-4 text-xs font-bold shadow-[4px_6px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:text-lg"
               >
                 About Me
               </a>
@@ -121,7 +121,7 @@ const Jumbotrons = () => {
                 rotate: { duration: 4, delay: 1.1, repeat: Infinity, ease: "easeInOut" },
               }}
               whileHover={{ scale: 1.14, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
-              className="absolute top-12 right-4 rounded-full border-[3px] border-black bg-yellow-300 p-3 px-4 shadow-[3px_3px_0px_#000] lg:top-34 lg:right-14 lg:px-6 lg:py-5"
+              className="absolute top-12 right-4 rounded-full border-[3px] border-black bg-yellow-300 p-3 px-4 shadow-[3px_3px_0px_#000] lg:top-24 lg:right-14 lg:px-6 lg:py-5"
             >
               <FontAwesomeIcon className="text-xl lg:text-4xl rotate-345" icon={faDatabase} />
             </motion.div>
@@ -146,7 +146,7 @@ const Jumbotrons = () => {
               animate={{ opacity: 1, scale: 1, rotate: -12 }}
               transition={{ duration: 0.55, delay: 0, ease: "backOut" }}
               whileHover={{ scale: 1.15, rotate: 0, transition: { duration: 0.2, delay: 0 } }}
-              className="absolute bottom-16 right-3 rounded-xl border-[3px] border-black bg-pink-300 p-3 shadow-[3px_3px_0px_#000] lg:bottom-24 lg:right-1 lg:p-4"
+              className="absolute bottom-16 right-3 rounded-xl border-[3px] border-black bg-pink-300 p-3 shadow-[3px_3px_0px_#000] lg:bottom-28 lg:right-6 lg:p-4"
               aria-label="Code"
             >
               <FontAwesomeIcon className="text-xl lg:text-3xl" icon={faCode} />
@@ -154,14 +154,14 @@ const Jumbotrons = () => {
 
             <motion.div
               initial={{ opacity: 0, scale: 0.5, rotate: -80 }}
-              animate={{ opacity: 1, scale: 1.2, rotate: 16 }}
+              animate={{ opacity: 1, scale: 1, rotate: 16 }}
               transition={{ duration: 0.7, delay: 0.8, ease: "backOut" }}
-              whileHover={{ scale: 1.4, rotate: 36, transition: { delay: 0, duration: 0.3 } }}
+              whileHover={{ scale: 1.2, rotate: 36, transition: { delay: 0, duration: 0.3 } }}
               className="absolute bottom-14 left-2 rounded-full border-[3px] border-black bg-orange-300 px-3 py-2 shadow-[3px_3px_0px_#000] lg:bottom-20 lg:left-16"
               aria-label="Pointer"
             >
               <a href="/about">
-                <FontAwesomeIcon className="text-lg lg:text-2xl pl-1 -scale-x-100" icon={faArrowPointer} />
+                <FontAwesomeIcon className="text-base lg:text-3xl pl-1 -scale-x-100" icon={faArrowPointer} />
               </a>
             </motion.div>
           </motion.div>
