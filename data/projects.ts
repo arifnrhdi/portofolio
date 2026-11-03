@@ -2,6 +2,17 @@ import type { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
+    title: "Laboratory Distributor Catalog",
+    category: "Full Stack & Deployment",
+    image: "/images/pacific-scientific.png",
+    imageFit: "cover",
+    alt: "Pacific Scientific logo",
+    description:
+      "Rebuilt a bilingual product catalog with a React and Vite frontend, Express and TypeScript API, and MariaDB. Configured cPanel deployment for the SPA and Node.js server, including SPA fallback, production environment settings, and API routing.",
+    tech: ["React", "Vite", "Express", "TypeScript", "MariaDB", "cPanel"],
+    href: "https://www.pac-sci.com/",
+  },
+  {
     title: "Bank Sampah Kelurahan Cikoko",
     category: "Mobile Full Stack",
     image: "/images/sampah.png",

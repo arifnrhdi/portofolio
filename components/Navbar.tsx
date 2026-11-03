@@ -3,8 +3,6 @@
 import { useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AnimatePresence, motion } from "framer-motion";
 import NavbarMobile from "@/components/NavbarMobile";
 
@@ -18,7 +16,6 @@ const links = [
 const Navbar = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [isSending, setIsSending] = useState(false);
   const [contactStatus, setContactStatus] = useState("");
@@ -110,11 +107,6 @@ const Navbar = () => {
               Contact Me
             </button>
           </div>
-
-          {/* Mobile Button (kept for parity, hidden — mobile uses bottom nav) */}
-          <button onClick={() => setOpen(!open)} className="text-2xl lg:hidden" aria-label="Toggle menu">
-            <FontAwesomeIcon icon={open ? faXmark : faBars} />
-          </button>
         </nav>
       </motion.header>
 

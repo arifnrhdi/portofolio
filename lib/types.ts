@@ -2,6 +2,7 @@ export type Project = {
   title: string;
   category: string;
   image: string;
+  imageFit?: "cover" | "contain";
   alt: string;
   description: string;
   tech: string[];

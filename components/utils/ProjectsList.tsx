@@ -15,6 +15,7 @@ const ProjectsList = ({ limit }: ProjectsListProps) => {
         <Cards
           key={project.title}
           image={project.image}
+          imageFit={project.imageFit}
           alt={project.alt}
           category={project.category}
           title={project.title}

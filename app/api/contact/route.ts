@@ -51,7 +51,7 @@ export async function POST(request: Request) {
       port: smtpPort,
       secure: smtpSecure,
       auth: {
-        user: recipient,
+        user: smtpUser,
         pass: smtpPassword,
       },
     });

@@ -52,16 +52,16 @@ const Jumbotrons = () => {
 
           {/* ================= KANAN ================= */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.94 }}
-            animate={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
             className="relative order-1 flex justify-center lg:order-2"
           >
             {/* Foto pop-up */}
             <div className="relative isolate h-[340px] w-full max-w-[340px] md:h-[500px] md:max-w-[420px]">
               <motion.div
-                initial={{ opacity: 0, scale: 0.72, y: 30 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute inset-0 z-10"
               >
