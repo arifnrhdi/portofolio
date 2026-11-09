@@ -51,12 +51,7 @@ const Jumbotrons = () => {
           </motion.div>
 
           {/* ================= KANAN ================= */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.94 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-            className="relative order-1 flex justify-center lg:order-2"
-          >
+          <div className="relative order-1 flex justify-center lg:order-2">
             {/* Foto pop-up */}
             <div className="relative isolate h-[340px] w-full max-w-[340px] md:h-[500px] md:max-w-[420px]">
               <motion.div
@@ -159,7 +154,7 @@ const Jumbotrons = () => {
                 <FontAwesomeIcon className="text-base lg:text-3xl pl-1 -scale-x-100" icon={faArrowPointer} />
               </a>
             </motion.div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
