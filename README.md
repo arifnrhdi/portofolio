@@ -67,3 +67,11 @@ bentrok dengan gaya neobrutalism yang sudah bold lewat border & shadow-nya sendi
   diberi `"use client"`; komponen statis dibiarkan Server Component agar tetap ringan.
 - Data project & artikel dipisah ke `data/projects.ts` dan `data/articles.ts` (typed lewat
   `lib/types.ts`) — supaya gampang ditambah tanpa menyentuh komponen tampilan.
+
+## 6. AI coding assistant
+
+GitHub Copilot mengikuti prinsip [Ponytail](https://github.com/dietrichgebert/ponytail)
+lewat `.github/copilot-instructions.md`: perubahan sekecil mungkin yang tetap lengkap,
+dengan validasi, error handling, security, accessibility, dan pengecekan yang relevan.
+Adapter ini berlaku untuk Copilot di repo ini; slash commands Ponytail tidak tersedia di
+VS Code Chat.

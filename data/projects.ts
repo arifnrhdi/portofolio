@@ -2,13 +2,23 @@ import type { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
+    title: "Laboratory Distributor Catalog",
+    category: "Full stack & Deployment",
+    image: "/images/pacific-scientific.webp",
+    alt: "Pacific Scientific Company Profile",
+    description:
+      "A company profile website built to establish Pacific Scientific’s online presence, with a React and Vite frontend, Node.js and Express APIs, and a MySQL database.",
+    tech: ["React.js", "Express.js", "MySQL", "cPanel"],
+    href: "https://www.pac-sci.com",
+  },
+  {
     title: "Bank Sampah Kelurahan Cikoko",
     category: "Mobile Full Stack",
     image: "/images/sampah.png",
     alt: "Bank Sampah",
     description:
       "A mobile waste bank application developed using React Native, Express.js, Supabase, and Prisma to simplify waste management and transaction records.",
-    tech: ["React Native", "Express", "Supabase", "Prisma"],
+    tech: ["React Native", "Express.js", "Supabase", "Prisma"],
     href: "https://github.com/arifnrhdi/banksampah-mobileapp",
   },
   {
@@ -48,7 +58,7 @@ export const projects: Project[] = [
     alt: "Sakana To-Do List",
     description:
       "A modern task management web application built with React and Express.js featuring authentication and CRUD functionality.",
-    tech: ["React", "Express", "MySQL"],
+    tech: ["React", "Express.js", "MySQL"],
     href: "https://github.com/arifnrhdi/sakana-todo-list",
   },
   {
@@ -58,7 +68,7 @@ export const projects: Project[] = [
     alt: "AdoptPets",
     description:
       "A pet adoption platform that allows users to browse, add, edit, and manage pet adoption data with a responsive interface.",
-    tech: ["React", "Express", "MySQL"],
+    tech: ["React", "Express.js", "MySQL"],
     href: "https://github.com/arifnrhdi/adoptpets",
   },
   {

@@ -15,7 +15,7 @@ type CardsProps = {
   title: string;
   description: string;
   tech?: string[];
-  href: string;
+  href?: string;
 };
 
 const Cards = ({ image, alt, category, title, description, tech = [], href }: CardsProps) => {
@@ -70,15 +70,17 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
           )}
 
           {/* Button */}
-          <a
-            href={href}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-auto inline-flex w-fit items-center gap-1 rounded-full border-[3px] border-black bg-[#7D9DFF] px-4 py-1 text-xs font-bold shadow-[3px_3px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:px-6 lg:py-1.5 lg:text-sm lg:shadow-[4px_4px_0px_#000]"
-          >
-            View
-            <FontAwesomeIcon className="text-[9px] lg:text-sm" icon={faArrowUpRightFromSquare} />
-          </a>
+          {href && (
+            <a
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-auto inline-flex w-fit items-center gap-1 rounded-full border-[3px] border-black bg-[#7D9DFF] px-4 py-1 text-xs font-bold shadow-[3px_3px_0px_#000] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none lg:px-6 lg:py-1.5 lg:text-sm lg:shadow-[4px_4px_0px_#000]"
+            >
+              View
+              <FontAwesomeIcon className="text-[9px] lg:text-sm" icon={faArrowUpRightFromSquare} />
+            </a>
+          )}
         </div>
       </motion.div>
       <AnimatePresence>
@@ -99,7 +101,7 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.25 }}
-              className="fixed left-1/2 top-1/2 z-60 w-[80%] lg:w-[30%]  max-w-4xl -translate-x-1/2 -translate-y-1/2"
+              className="fixed left-1/2 top-1/2 z-60 w-[80%] lg:w-[35%]  max-w-4xl -translate-x-1/2 -translate-y-1/2"
             >
               <div className="rounded-4xl border-[3px] border-black bg-[#FFF9F1] p-6 shadow-[6px_6px_0px_#000]">
                 <div className="relative h-30 lg:h-60 overflow-hidden rounded-2xl border-[3px] border-black">
@@ -129,14 +131,16 @@ const Cards = ({ image, alt, category, title, description, tech = [], href }: Ca
                     Close
                   </button>
 
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-xl border-[3px] border-black bg-[#7D9DFF] px-2 lg:px-5 py-1 lg:py-2 text-sm lg:text-base font-bold shadow-[2px_2px_0px_#000]"
-                  >
-                    Visit Project
-                  </a>
+                  {href && (
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-xl border-[3px] border-black bg-[#7D9DFF] px-2 lg:px-5 py-1 lg:py-2 text-sm lg:text-base font-bold shadow-[2px_2px_0px_#000]"
+                    >
+                      Visit Project
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

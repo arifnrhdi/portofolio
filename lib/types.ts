@@ -5,7 +5,7 @@ export type Project = {
   alt: string;
   description: string;
   tech: string[];
-  href: string;
+  href?: string;
 };
 
 export type Article = {
