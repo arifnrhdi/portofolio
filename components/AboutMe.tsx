@@ -147,7 +147,7 @@ const AboutMe = () => {
                     <p className="font-semibold text-zinc-600 lg:text-lg">PT. Pasifik Saintifindo</p>
                   </div>
                   <div className="rounded-full border-2 border-black bg-[#FFE066] px-2.5 py-1 text-[11px] font-bold shadow-[2px_2px_0px_#000] md:px-4 md:py-2 md:text-sm md:shadow-[3px_3px_0px_#000]">
-                    Sep 2026 — Present
+                    Sep 2026 — Nov 2026
                   </div>
                 </div>
 
