@@ -29,7 +29,7 @@ const Footer = () => {
             <h2 className="text-4xl font-black">Arif.</h2>
 
             <p className="mt-2 text-zinc-600">
-              Full Stack Developer
+              Software Engineer | Full Stack Developer
               <br />
               AI & Data Enthusiast
             </p>

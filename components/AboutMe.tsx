@@ -39,12 +39,13 @@ const AboutMe = () => {
         <div className="grid items-center gap-12 rounded-4xl border-[3px] border-black bg-white p-8 shadow-[10px_10px_0px_#000]">
           <div className="order-2 space-y-5 text-lg leading-8 text-zinc-700">
             <p className="text-sm lg:text-lg">
-              An Informatics graduate from Gunadarma University with a strong interest in full-stack web development and
-              data analysis. Proficient in frontend technologies such as React.js, Next.js, and Tailwind CSS, as well as
-              backend development using Express.js, MySQL, and Supabase. Experienced in using Python for data
-              processing, exploratory data analysis, and developing machine learning classification systems. Passionate
-              about building scalable web applications and leveraging data-driven solutions to solve real-world problems
-              while continuously expanding technical skills and practical experience.
+              Informatics graduate with a strong interest in Software Engineering, Full-Stack Web Development, Data
+              Analytics, and Artificial Intelligence. Experienced in developing web applications across frontend and
+              backend technologies, managing databases, and performing data processing, analysis, and machine learning
+              modeling. Passionate about building scalable and practical software solutions to address real-world
+              challenges, while exploring AI Agents and AI-powered development tools to streamline application
+              development, automate workflows, and improve productivity. A fast learner with strong problem-solving
+              skills, adaptability, and a continuous commitment to learning and growing alongside evolving technologies.
             </p>
           </div>
         </div>
@@ -63,8 +64,18 @@ const AboutMe = () => {
 
           <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4 lg:grid-cols-4">
             {technicalSkills.map(([name, image]) => (
-              <div key={name} className="flex min-h-32 flex-col items-center justify-center gap-3 rounded-xl border-2 border-black bg-white p-4 text-center shadow-[4px_4px_0px_#000] transition-transform hover:-translate-y-1 hover:bg-[#FDF6EC]">
-                <Image src={image} alt="" aria-hidden="true" width={64} height={64} className="size-14 object-contain" />
+              <div
+                key={name}
+                className="flex min-h-32 flex-col items-center justify-center gap-3 rounded-xl border-2 border-black bg-white p-4 text-center shadow-[4px_4px_0px_#000] transition-transform hover:-translate-y-1 hover:bg-[#FDF6EC]"
+              >
+                <Image
+                  src={image}
+                  alt=""
+                  aria-hidden="true"
+                  width={64}
+                  height={64}
+                  className="size-14 object-contain"
+                />
                 <span className="text-sm font-bold uppercase tracking-wide">{name}</span>
               </div>
             ))}
@@ -136,7 +147,13 @@ const AboutMe = () => {
             <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
               <div className="flex items-start">
                 <div className="rounded-2xl border-[3px] border-black bg-white p-4 shadow-[5px_5px_0px_#000]">
-                  <Image src="/images/logo2.png" alt="Pacific Scientific" width={112} height={112} className="w-18 lg:w-28" />
+                  <Image
+                    src="/images/logo2.png"
+                    alt="Pacific Scientific"
+                    width={112}
+                    height={112}
+                    className="w-18 lg:w-28"
+                  />
                 </div>
               </div>
 
@@ -152,15 +169,31 @@ const AboutMe = () => {
                 </div>
 
                 <ul className="mt-4 list-disc pl-4 text-sm text-zinc-700 lg:text-[17px] lg:leading-6">
-                  <li>Developed and maintained a company profile website using React.js and Vite to establish the company&apos;s online presence.</li>
+                  <li>
+                    Developed and maintained a company profile website using React.js and Vite to establish the
+                    company&apos;s online presence.
+                  </li>
                   <li>Built backend services and RESTful APIs using Node.js and Express.js.</li>
                   <li>Designed and managed relational databases using MySQL to support website functionality.</li>
                   <li>Configured website deployment with cPanel shared hosting.</li>
                 </ul>
 
                 <div className="mt-4 flex flex-wrap gap-2 md:gap-3">
-                  {["Full-Stack Development", "React.js", "Vite", "Node.js", "Express.js", "MySQL", "REST API", "Deployment", "Web Hosting"].map((item) => (
-                    <span key={item} className="rounded-full border-2 border-black bg-[#7D9DFF] px-2.5 py-1 text-[11px] font-bold shadow-[2px_2px_0px_#000] md:px-4 md:py-2 md:text-sm md:shadow-[3px_3px_0px_#000]">
+                  {[
+                    "Full-Stack Development",
+                    "React.js",
+                    "Vite",
+                    "Node.js",
+                    "Express.js",
+                    "MySQL",
+                    "REST API",
+                    "Deployment",
+                    "Web Hosting",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border-2 border-black bg-[#7D9DFF] px-2.5 py-1 text-[11px] font-bold shadow-[2px_2px_0px_#000] md:px-4 md:py-2 md:text-sm md:shadow-[3px_3px_0px_#000]"
+                    >
                       {item}
                     </span>
                   ))}
