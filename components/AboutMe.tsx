@@ -15,6 +15,7 @@ const skills = [
 const technicalSkills = [
   ["React.js", "/images/React.svg"],
   ["JavaScript", "/images/javascript.png"],
+  ["TypeScript", "/images/typescript.webp"],
   ["Node.js", "/images/nodejs.png"],
   ["Express.js", "/images/expressjs.png"],
   ["Next.js", "/images/nextjs.jpg"],
@@ -28,7 +29,6 @@ const technicalSkills = [
     ["GitHub", "/images/github.png"],
     ["Google Colab", "/images/colab.svg"],
     ["Kaggle", "/images/kaggle.svg"],
-    ["Prisma", "/images/prisma.png"],
 ];
 
 const AboutMe = () => {
@@ -54,7 +54,7 @@ const AboutMe = () => {
       <Reveal>
         <section className="relative rounded-[30px] border-[3px] border-black bg-[#A388EE] p-6 text-zinc-900 shadow-[10px_10px_0px_#000] md:p-10 lg:p-12">
           <div className="text-center">
-            <p className="text-sm font-bold tracking-[0.3em] uppercase">Skills</p>
+            <p className="text-sm font-bold tracking-[0.3em] uppercase">Tech Stack</p>
             <h2 className="mt-2 text-4xl font-black">What I Do</h2>
             <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-zinc-700 lg:text-base">
               Technologies and tools I use for web development, data, and design.
