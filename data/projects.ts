@@ -13,12 +13,12 @@ export const projects: Project[] = [
   },
   {
     title: "Lyract - Discord Music Bot",
-    category: "Music Bot",
+    category: "Chatbot",
     image: "/images/bot-music.png",
     alt: "Lyract Discord music bot",
     description:
       "A Discord music bot that turns natural Indonesian chat into music playback, with queue controls and playback history.",
-    tech: ["Python", "discord.py", "Groq", "yt-dlp", "FFmpeg", "SQLite"],
+    tech: ["Python", "Discord.py", "Groq", "SQLite"],
     href: "https://lyract.vercel.app/?lang=en",
   },
   {
