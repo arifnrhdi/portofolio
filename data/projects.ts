@@ -12,14 +12,14 @@ export const projects: Project[] = [
     href: "https://www.pac-sci.com",
   },
   {
-    title: "Bank Sampah Kelurahan Cikoko",
-    category: "Mobile Full Stack",
-    image: "/images/sampah.png",
-    alt: "Bank Sampah",
+    title: "Lyract - AI Discord Music Bot",
+    category: "Chatbot",
+    image: "/images/bot-music.png",
+    alt: "Lyract",
     description:
-      "A mobile waste bank application developed using React Native, Express.js, Supabase, and Prisma to simplify waste management and transaction records.",
-    tech: ["React Native", "Express.js", "Supabase", "Prisma"],
-    href: "https://github.com/arifnrhdi/banksampah-mobileapp",
+      "AI Discord music bot built with Python and discord.py to turn casual Indonesian chat into music requests.",
+    tech: ["Python", "Discord.py", "Groq", "OpenAI", "SQLite"],
+    href: "https://lyract.vercel.app/?lang=en",
   },
   {
     title: "Warung Kelontong App",
@@ -30,6 +30,16 @@ export const projects: Project[] = [
       "A point-of-sale web application for managing sales, debts, inventory, OCR receipt scanning, and sales reports for a family-owned grocery store.",
     tech: ["Next.js", "Supabase", "Tailwind CSS", "Tesseract.js"],
     href: "https://github.com/arifnrhdi/warung-mamah-arif-supabase",
+  },
+  {
+    title: "Bank Sampah Kelurahan Cikoko",
+    category: "Mobile Full Stack",
+    image: "/images/sampah.png",
+    alt: "Bank Sampah",
+    description:
+      "A mobile waste bank application developed using React Native, Express.js, Supabase, and Prisma to simplify waste management and transaction records.",
+    tech: ["React Native", "Express.js", "Supabase", "Prisma"],
+    href: "https://github.com/arifnrhdi/banksampah-mobileapp",
   },
   {
     title: "AI-Based Phishing URL Detection",
