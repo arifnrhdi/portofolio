@@ -12,13 +12,13 @@ export const projects: Project[] = [
     href: "https://www.pac-sci.com",
   },
   {
-    title: "Lyract - AI Discord Music Bot",
-    category: "Chatbot",
+    title: "Lyract - Discord Music Bot",
+    category: "Music Bot",
     image: "/images/bot-music.png",
-    alt: "Lyract",
+    alt: "Lyract Discord music bot",
     description:
-      "AI Discord music bot built with Python and discord.py to turn casual Indonesian chat into music requests.",
-    tech: ["Python", "Discord.py", "Groq", "OpenAI", "SQLite"],
+      "A Discord music bot that turns natural Indonesian chat into music playback, with queue controls and playback history.",
+    tech: ["Python", "discord.py", "Groq", "yt-dlp", "FFmpeg", "SQLite"],
     href: "https://lyract.vercel.app/?lang=en",
   },
   {
